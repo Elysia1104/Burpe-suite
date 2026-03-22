@@ -4,7 +4,7 @@ Identified a Reflected XSS vulnerability in a web application. Demonstrated how 
 Project Objective
 The goal of this project was to identify and exploit a Reflected Cross-Site Scripting (XSS) vulnerability within a controlled lab environment (DVWA). I focused on bypassing front-end interfaces and manipulating HTTP requests directly using industry-standard tools.
 
-##Toolset
+## Toolset
 Target: Metasploitable 2 (DVWA - Damn Vulnerable Web Application)
 Platform: Kali Linux
 Proxy Tool: Burp Suite Community Edition (Intercept, Repeater, and Render Engine)
@@ -20,7 +20,7 @@ Direct manipulation of the URI parameters.
 3. Payload Injection
 I injected a JavaScript payload designed to trigger a browser alert
 
-##Security Implications & Mitigation
+## Security Implications & Mitigation
 The Risk: An attacker could use this vulnerability to steal session cookies (PHPSESSID), perform account takeovers, or redirect users to malicious phishing sites.
 The Fix: Implement Input Validation and Output Encoding. Specifically, the application should use functions to escape HTML characters (e.g., converting < to &lt;) before rendering user input on the page.
 
